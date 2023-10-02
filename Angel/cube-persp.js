@@ -88,7 +88,7 @@ window.onload = function init()
     } );
     
     document.getElementById("zNearSlider").onchange = function(event) {
-        near = parseFloar(event.target.value);
+        near = parseFloat(event.target.value);
     };
     document.getElementById("zFarSlider").onchange = function(event) {
         far = parseFloat(event.target.value);

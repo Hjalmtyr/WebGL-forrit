@@ -172,7 +172,7 @@ function render()
     gl.uniformMatrix4fv(matrixLoc, false, flatten(ctm1));
     gl.drawArrays( gl.TRIANGLES, 0, NumVertices );
 
-    // Then the table top
+    // Svo toppurinn á kollinum
     ctm1 = mult( ctm, translate( 0.0, 0.325, 0.0 ) );
     ctm1 = mult( ctm1, scalem( 0.9, 0.2, 0.7 ) );
     gl.uniformMatrix4fv(matrixLoc, false, flatten(ctm1));

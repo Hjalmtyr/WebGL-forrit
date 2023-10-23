@@ -212,6 +212,7 @@ function render() {
         vec3(mv[1][0], mv[1][1], mv[1][2]),
         vec3(mv[2][0], mv[2][1], mv[2][2])
     ];
+	normalMatrix.matrix = true;
             
     gl.uniformMatrix4fv(modelViewMatrixLoc, false, flatten(mv) );
     gl.uniformMatrix4fv(projectionMatrixLoc, false, flatten(projectionMatrix) );

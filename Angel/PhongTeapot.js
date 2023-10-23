@@ -153,6 +153,7 @@ var render = function(){
         vec3(mv[1][0], mv[1][1], mv[1][2]),
         vec3(mv[2][0], mv[2][1], mv[2][2])
     ];
+	normalMatrix.matrix = true;
 
     gl.uniformMatrix3fv(normalMatrixLoc, false, flatten(normalMatrix) );
 

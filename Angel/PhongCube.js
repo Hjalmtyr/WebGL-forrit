@@ -24,11 +24,6 @@ var zDist = -3.0;
 var fovy = 50.0;
 var near = 0.2;
 var far = 100.0;
-
-var va = vec4(0.0, 0.0, -1.0,1);
-var vb = vec4(0.0, 0.942809, 0.333333, 1);
-var vc = vec4(-0.816497, -0.471405, 0.333333, 1);
-var vd = vec4(0.816497, -0.471405, 0.333333,1);
     
 var lightPosition = vec4(1.0, 1.0, 1.0, 0.0 );
 var lightAmbient = vec4(0.2, 0.2, 0.2, 1.0 );
@@ -106,6 +101,7 @@ window.onload = function init() {
     normalMatrixLoc = gl.getUniformLocation( program, "normalMatrix" );
 
     projectionMatrix = perspective( fovy, 1.0, near, far );
+    gl.uniformMatrix4fv(projectionMatrixLoc, false, flatten(projectionMatrix) );
 
     
     gl.uniform4fv( gl.getUniformLocation(program, "ambientProduct"), flatten(ambientProduct) );
@@ -215,7 +211,6 @@ function render() {
 	normalMatrix.matrix = true;
             
     gl.uniformMatrix4fv(modelViewMatrixLoc, false, flatten(mv) );
-    gl.uniformMatrix4fv(projectionMatrixLoc, false, flatten(projectionMatrix) );
     gl.uniformMatrix3fv(normalMatrixLoc, false, flatten(normalMatrix) );
         
     gl.drawArrays( gl.TRIANGLES, 0, NumVertices );

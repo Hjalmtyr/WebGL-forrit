@@ -3,7 +3,7 @@
 //     Fjórflötungur (tetrahedron) Sierpinskis - þrívíddarútgáfa
 //     af þríhyrningi Sierpinskis.
 //
-//    Hjálmtýr Hafsteinsson, ágúst 2023
+//    Hjálmtýr Hafsteinsson, ágúst 2024
 ///////////////////////////////////////////////////////////////////
 var canvas;
 var gl;

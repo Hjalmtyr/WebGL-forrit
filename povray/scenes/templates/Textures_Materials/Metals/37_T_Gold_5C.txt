@@ -1,4 +1,0 @@
-         texture { T_Gold_5C
-                   //normal { bumps 0.5 scale 0.15} 
-                   finish { phong 1}
-                 } // end of texture 

@@ -1,4 +1,0 @@
-         texture { Cork 
-                   // normal { bumps 0.75 scale 0.015}
-                   finish {  phong 1}
-                 } // end of texture 

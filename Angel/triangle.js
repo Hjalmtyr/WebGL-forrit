@@ -2,7 +2,7 @@
 //    Sýnidæmi í Tölvugrafík
 //     Einfaldasta WebGL forritið.  Teiknar einn rauðan þríhyrning.
 //
-//    Hjálmtýr Hafsteinsson, ágúst 2023
+//    Hjálmtýr Hafsteinsson, ágúst 2024
 ///////////////////////////////////////////////////////////////////
 var gl;
 var points;

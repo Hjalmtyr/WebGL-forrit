@@ -1,0 +1,1 @@
+bin\pvengine64.exe /install H:\.public_html\kennsla\tgr\povray H:\.public_html\kennsla\tgr\povray

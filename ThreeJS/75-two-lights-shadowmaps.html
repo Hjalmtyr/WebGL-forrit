@@ -40,7 +40,7 @@
 			scene.add( cube );
 
             // Búa til kúlu með Phong áferð og bæta í sviðsnetið
-			const ballGeometry = new THREE.SphereGeometry( 0.5, 40, 40 );
+			const ballGeometry = new THREE.SphereGeometry( 0.5, 20, 20 );
 			const ballMaterial = new THREE.MeshPhongMaterial( { color: 0xaaaa44 } );
 			const ball = new THREE.Mesh( ballGeometry, ballMaterial );
             // getur valdið skugga og fengið skugga
@@ -131,6 +131,12 @@
                 // Færa kúluna upp og niður eftir ballOffset
                 ball.position.y = 0.5 + THREE.MathUtils.lerp(0, 1, ballOffset);
                 
+                const cubeOffset = Math.sin(time * 2.5);
+                
+                // Færa tening fram og til baka eftir cubeOffset
+                cube.position.z = cubeOffset;
+                
+
 				requestAnimationFrame( animate );
 
                 controls.update();
